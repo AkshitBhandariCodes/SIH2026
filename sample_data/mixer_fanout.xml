@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset description="Mixer/tumbler fan-out pattern — multiple inputs aggregate into a central hub wallet which then distributes to many output wallets" attack_type="MIXER_FANOUT">
+
+  <!-- Phase 1: Multiple inputs to mixer hub -->
+  <transaction>
+    <txid>f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2</txid>
+    <timestamp>2026-03-05T14:00:00</timestamp>
+    <src_ip>103.25.202.100</src_ip>
+    <dst_ip>45.76.134.80</dst_ip>
+    <src_port>8333</src_port>
+    <dst_port>8333</dst_port>
+    <country>IN</country>
+    <asn>AS55836</asn>
+    <source_wallet>1MixerInput1XXXXXXXXXXXXXXXXXXTqR5a</source_wallet>
+    <destination_wallet>1MixerHubCentralXXXXXXXXXXXXXXWvN8b</destination_wallet>
+    <amount>2.50</amount>
+    <fee>0.0005</fee>
+    <script_type>P2SH</script_type>
+  </transaction>
+
+  <transaction>
+    <txid>f2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3</txid>
+    <timestamp>2026-03-05T14:01:00</timestamp>
+    <src_ip>185.100.87.206</src_ip>
+    <dst_ip>45.76.134.80</dst_ip>
+    <src_port>8333</src_port>
+    <dst_port>8333</dst_port>
+    <country>DE</country>
+    <asn>AS205100</asn>
+    <source_wallet>1MixerInput2XXXXXXXXXXXXXXXXXXYpK3c</source_wallet>
+    <destination_wallet>1MixerHubCentralXXXXXXXXXXXXXXWvN8b</destination_wallet>
+    <amount>3.10</amount>
+    <fee>0.0005</fee>
+    <script_type>P2SH</script_type>
+  </transaction>
+
+  <transaction>
+    <txid>f3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4</txid>
+    <timestamp>2026-03-05T14:02:00</timestamp>
+    <src_ip>209.141.55.26</src_ip>
+    <dst_ip>45.76.134.80</dst_ip>
+    <src_port>8333</src_port>
+    <dst_port>8333</dst_port>
+    <country>US</country>
+    <asn>AS53667</asn>
+    <source_wallet>1MixerInput3XXXXXXXXXXXXXXXXXXZmL4d</source_wallet>
+    <destination_wallet>1MixerHubCentralXXXXXXXXXXXXXXWvN8b</destination_wallet>
+    <amount>1.80</amount>
+    <fee>0.0005</fee>
+    <script_type>P2SH</script_type>
+  </transaction>
+
+  <transaction>
+    <txid>f4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5</txid>
+    <timestamp>2026-03-05T14:03:00</timestamp>
+    <src_ip>146.70.174.39</src_ip>
+    <dst_ip>45.76.134.80</dst_ip>
+    <src_port>8333</src_port>
+    <dst_port>8333</dst_port>
+    <country>NL</country>
+    <asn>AS9009</asn>
+    <source_wallet>1MixerInput4XXXXXXXXXXXXXXXXXXAnM5e</source_wallet>
+    <destination_wallet>1MixerHubCentralXXXXXXXXXXXXXXWvN8b</destination_wallet>
+    <amount>4.20</amount>
+    <fee>0.0005</fee>
+    <script_type>P2SH</script_type>
+  </transaction>
+
+  <!-- Phase 2: Hub distributes to many outputs (fan-out) -->
+  <transaction>
+    <txid>f5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6</txid>
+    <timestamp>2026-03-05T14:10:00</timestamp>
+    <src_ip>45.76.134.80</src_ip>
+    <dst_ip>104.238.170.40</dst_ip>
+    <src_port>8333</src_port>
+    <dst_port>8333</dst_port>
+    <country>US</country>
+    <asn>AS20473</asn>
+    <source_wallet>1MixerHubCentralXXXXXXXXXXXXXXWvN8b</source_wallet>
+    <destination_wallet>1MixerOut1XXXXXXXXXXXXXXXXXXXBqP6f</destination_wallet>
+    <amount>1.50</amount>
+    <fee>0.0003</fee>
+    <script_type>P2SH</script_type>
+  </transaction>
+
+  <transaction>
+    <txid>f6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1</txid>
+    <timestamp>2026-03-05T14:11:00</timestamp>
+    <src_ip>45.76.134.80</src_ip>
+    <dst_ip>95.216.45.220</dst_ip>
+    <src_port>8333</src_port>
+    <dst_port>8333</dst_port>
+    <country>DE</country>
+    <asn>AS24940</asn>
+    <source_wallet>1MixerHubCentralXXXXXXXXXXXXXXWvN8b</source_wallet>
+    <destination_wallet>1MixerOut2XXXXXXXXXXXXXXXXXXXCrQ7g</destination_wallet>
+    <amount>2.00</amount>
+    <fee>0.0003</fee>
+    <script_type>P2SH</script_type>
+  </transaction>
+
+  <transaction>
+    <txid>f7a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1</txid>
+    <timestamp>2026-03-05T14:12:00</timestamp>
+    <src_ip>45.76.134.80</src_ip>
+    <dst_ip>5.188.62.34</dst_ip>
+    <src_port>8333</src_port>
+    <dst_port>8333</dst_port>
+    <country>RU</country>
+    <asn>AS49505</asn>
+    <source_wallet>1MixerHubCentralXXXXXXXXXXXXXXWvN8b</source_wallet>
+    <destination_wallet>1MixerOut3XXXXXXXXXXXXXXXXXXXDsR8h</destination_wallet>
+    <amount>1.80</amount>
+    <fee>0.0003</fee>
+    <script_type>P2SH</script_type>
+  </transaction>
+
+  <transaction>
+    <txid>f8b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2</txid>
+    <timestamp>2026-03-05T14:13:00</timestamp>
+    <src_ip>45.76.134.80</src_ip>
+    <dst_ip>89.248.167.131</dst_ip>
+    <src_port>8333</src_port>
+    <dst_port>8333</dst_port>
+    <country>NL</country>
+    <asn>AS202425</asn>
+    <source_wallet>1MixerHubCentralXXXXXXXXXXXXXXWvN8b</source_wallet>
+    <destination_wallet>1MixerOut4XXXXXXXXXXXXXXXXXXXEtS9i</destination_wallet>
+    <amount>2.30</amount>
+    <fee>0.0003</fee>
+    <script_type>P2SH</script_type>
+  </transaction>
+
+  <transaction>
+    <txid>f9c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3</txid>
+    <timestamp>2026-03-05T14:14:00</timestamp>
+    <src_ip>45.76.134.80</src_ip>
+    <dst_ip>176.10.99.200</dst_ip>
+    <src_port>8333</src_port>
+    <dst_port>8333</dst_port>
+    <country>CH</country>
+    <asn>AS13030</asn>
+    <source_wallet>1MixerHubCentralXXXXXXXXXXXXXXWvN8b</source_wallet>
+    <destination_wallet>1MixerOut5XXXXXXXXXXXXXXXXXXXFuT0j</destination_wallet>
+    <amount>3.98</amount>
+    <fee>0.0003</fee>
+    <script_type>P2SH</script_type>
+  </transaction>
+
+</dataset>

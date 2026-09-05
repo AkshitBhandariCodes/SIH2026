@@ -1,0 +1,36 @@
+# ============================================================
+# AURA-BTC: Autonomous Offline Forensic Intelligence Platform
+# Docker Compose Multi-Service Architecture
+# ============================================================
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: aura-btc-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"   # Core FastAPI REST Engine & Ingestion API
+      - "8080:8080"   # DuckDB Forensic Studio & Interactive SQL Console
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./src:/app/src
+      - ./scripts:/app/scripts
+      - ./sample_data:/app/sample_data
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  frontend:
+    build:
+      context: ./aura-btc-dashboard
+      dockerfile: Dockerfile
+    container_name: aura-btc-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"   # Next.js Forensic Dashboard & Graph Visualizer
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+    depends_on:
+      - backend
