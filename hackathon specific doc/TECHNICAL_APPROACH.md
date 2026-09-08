@@ -27,8 +27,8 @@ The system is constructed with a microservices architecture designed for immedia
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                      OFFLINE INGESTION & PIPELINE                       │
-│   CSV / JSON / XML Bulk Metadata ──► PyArrow / Pydantic Parser         │
+│                                OFFLINE INGESTION & PIPELINE                        │
+│   CSV / JSON / XML Bulk Metadata ──►   PyArrow / Pydantic Parser                   │
 └────────────────────────────────────┬────────────────────────────────────┘
                                      │
                                      ▼
@@ -41,7 +41,7 @@ The system is constructed with a microservices architecture designed for immedia
 ┌─────────────────────────────────────────────────────────────────────────┐
 │                       AI/ML ENGINE & RISK ENGINE                        │
 │   • 20+ Feature Engineering          • Isolation Forest (Anomaly Score) │
-│   • DBSCAN Entity Clustering         • Risk Propagation Algorithm       │
+│   • DBSCAN Entity Clustering         • Risk Propagation Algorithm                                   │
 │   • Heuristic Rule Engine (Peeling)  • XAI Evidence Generation Bullets  │
 └────────────────────────────────────┬────────────────────────────────────┘
                                      │
