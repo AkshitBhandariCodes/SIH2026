@@ -1,0 +1,9 @@
+/docs/
+/hackathon specific doc/
+*.jpg
+.venv/
+.pytest_cache/
+__pycache__/
+*.duckdb
+*.duckdb.wal
+*.joblib
