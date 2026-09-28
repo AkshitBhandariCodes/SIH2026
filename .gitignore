@@ -1,5 +1,9 @@
-/docs/
-/hackathon specific doc/
+docs/slide*.png
+docs/slide*.jpg
+docs/SLIDES.md
+docs/script.md
+hackathon specific doc/slide*.png
+hackathon specific doc/slide*.jpg
 *.jpg
 .venv/
 .pytest_cache/
