@@ -11,5 +11,4 @@ __pycache__/
 *.duckdb
 *.duckdb.wal
 *.joblib
-config.bat
 node_modules
